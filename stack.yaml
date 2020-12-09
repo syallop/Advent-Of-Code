@@ -9,5 +9,6 @@ packages:
 - ./2020/6
 - ./2020/7
 - ./2020/8
+- ./2020/9
 extra-deps: []
 allow-newer: true
