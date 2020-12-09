@@ -36,6 +36,8 @@ module AOC
   , space
   , digit
   , hexDigit
+  , digits
+  , sign
   )
   where
 
@@ -374,6 +376,19 @@ digit = alternatives
   ,charIs '7' *> pure 7
   ,charIs '8' *> pure 8
   ,charIs '9' *> pure 9
+  ]
+
+-- | Parse a sequence of positive digits 0.9
+digits :: Parser Int
+digits = foldl (\x -> ((10 * x) +)) 0 <$> many1 digit
+
+-- | Parse a + or - sign into a function to modify a number accordingly.
+-- Defaults to assuming + if no character present.
+sign :: Num a => Parser (a -> a)
+sign = alternatives
+  [ charIs '-' *> pure negate
+  , charIs '+' *> pure id
+  , pure id
   ]
 
 -- | A single hex-digit 0..9,a..f
