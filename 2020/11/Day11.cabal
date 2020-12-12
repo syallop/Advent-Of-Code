@@ -1,0 +1,36 @@
+name:                Day11
+version:             0.1.0.0
+synopsis:            Advent of code day 11
+description:         Advent of code day 11
+-- license:             
+author:              Samuel A. Yallop
+maintainer:          syallop@gmail.com
+copyright:           Samuel A. Yallop
+category:            Other
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable Day11
+  main-is:             Day11.hs
+
+  -- other-modules:       
+  other-extensions:    OverloadedStrings
+                     , GeneralizedNewtypeDeriving
+                     , LambdaCase
+
+  build-depends:       base >= 4.12
+
+                     , AOC
+                     , QuickCheck
+                     , containers >=0.5
+                     , comonad
+                     , adjunctions
+                     , distributive
+                     , vector
+                     , text
+
+  -- hs-source-dirs:      
+  default-language:    Haskell2010
+
+  ghc-options: -fwarn-incomplete-patterns -Werror=incomplete-patterns
+
