@@ -1,8 +1,8 @@
 # Advent Of Code
 
-This repository contains an attempt at completing 2020's [Advent Of Code](https://adventofcode.com) in Haskell.
+This repository contains an attempt at completing 2020 & 2021's [Advent Of Code](https://adventofcode.com) in Haskell.
 
-This years self-imposed, time-wasting constraints for additional 'fun' are:
+The self-imposed, time-wasting constraints for additional 'fun' are:
 - Every solution must semi-gracefully deal with errors (malformed input, violated constraints etc) with an understandable error message.
   - This means no exceptions, partial functions or making assumptions about the input.
 - The only 'external' libraries permitted are things in base/ prelude and a couple of standard containers like `Map`, `Set` & `Text`. Anything else can be defined in shared utils.
