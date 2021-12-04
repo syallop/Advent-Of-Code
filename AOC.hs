@@ -34,6 +34,7 @@ module AOC
   , word
   , newline
   , space
+  , comma
   , digit
   , hexDigit
   , digits
@@ -319,6 +320,9 @@ newline = charIs '\n'
 -- | Match a single regular space character.
 space :: Parser ()
 space = charIs ' '
+
+comma :: Parser ()
+comma = charIs ','
 
 -- | Succeed if the next input exactly matches a string of Text.
 --
