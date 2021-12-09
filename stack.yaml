@@ -22,5 +22,6 @@ packages:
 - ./2021/5
 - ./2021/6
 - ./2021/7
+- ./2021/8
 extra-deps: []
 allow-newer: true
